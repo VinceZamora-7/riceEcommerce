@@ -151,8 +151,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center">
             <p class="text-gray-900 font-semibold">
-              🚚 FREE SHIPPING on orders over $50 | 🎯 Use code RICE20 for 20%
-              off your first order | 📞 24/7 Customer Support
+              Minimum order of 5kg per variety. Free shipping on orders over
+              50kg
             </p>
           </div>
         </div>
@@ -203,7 +203,6 @@
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
             id="products-grid"
           >
-            <!-- Premium Basmati Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="premium"
@@ -219,49 +218,51 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Premium Basmati Rice
+                  Premium Sinandomeng Rice
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Long-grain aromatic rice perfect for biryanis. Aged 2 years
-                  for enhanced flavor.
+                  High-quality, long-grain fragrant rice, a staple for delicious
+                  Filipino meals.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">$12.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱285.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.9 (127)</span>
                 </div>
                 <div class="flex items-center justify-between mb-3">
                   <select
                     class="text-sm border rounded px-2 py-1"
-                    onchange="updatePackSize('basmati', this.value)"
+                    onchange="updatePackSize('sinandomeng', this.value)"
                   >
-                    <option value="1">5kg - ₱12.99</option>
-                    <option value="5">5kg - ₱59.99</option>
-                    <option value="10">10kg - ₱109.99</option>
+                    <option value="5">5kg - ₱285.00</option>
+                    <option value="10">10kg - ₱560.00</option>
+                    <option value="25">25kg - ₱1,350.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
                   <div class="flex items-center space-x-2">
                     <button
-                      onclick="updateQuantity('basmati', -1)"
+                      onclick="updateQuantity('sinandomeng', -1)"
                       class="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 text-sm"
                     >
                       -
                     </button>
-                    <span id="basmati-qty" class="w-6 text-center text-sm"
+                    <span id="sinandomeng-qty" class="w-6 text-center text-sm"
                       >1</span
                     >
                     <button
-                      onclick="updateQuantity('basmati', 1)"
+                      onclick="updateQuantity('sinandomeng', 1)"
                       class="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 text-sm"
                     >
                       +
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('basmati', 'Premium Basmati Rice', 12.99)"
+                    onclick="addToCart('sinandomeng', 'Premium Sinandomeng Rice', 285.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -270,7 +271,6 @@
               </div>
             </div>
 
-            <!-- Organic Jasmine Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="organic"
@@ -286,49 +286,51 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Organic Jasmine Rice
+                  Organic Dinorado Rice
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Fragrant Thai jasmine rice grown without pesticides. Certified
-                  organic.
+                  Certified organic, naturally sweet, and soft-texture Filipino
+                  rice. Pesticide-free.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">$10.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱310.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.8 (89)</span>
                 </div>
                 <div class="flex items-center justify-between mb-3">
                   <select
                     class="text-sm border rounded px-2 py-1"
-                    onchange="updatePackSize('jasmine', this.value)"
+                    onchange="updatePackSize('dinorado', this.value)"
                   >
-                    <option value="1">6kg - ₱10.99</option>
-                    <option value="5">5kg - ₱49.99</option>
-                    <option value="10">10kg - ₱89.99</option>
+                    <option value="5">5kg - ₱310.00</option>
+                    <option value="10">10kg - ₱610.00</option>
+                    <option value="25">25kg - ₱1,490.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
                   <div class="flex items-center space-x-2">
                     <button
-                      onclick="updateQuantity('jasmine', -1)"
+                      onclick="updateQuantity('dinorado', -1)"
                       class="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 text-sm"
                     >
                       -
                     </button>
-                    <span id="jasmine-qty" class="w-6 text-center text-sm"
+                    <span id="dinorado-qty" class="w-6 text-center text-sm"
                       >1</span
                     >
                     <button
-                      onclick="updateQuantity('jasmine', 1)"
+                      onclick="updateQuantity('dinorado', 1)"
                       class="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 text-sm"
                     >
                       +
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('jasmine', 'Organic Jasmine Rice', 10.99)"
+                    onclick="addToCart('dinorado', 'Organic Dinorado Rice', 310.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -337,7 +339,6 @@
               </div>
             </div>
 
-            <!-- Brown Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="organic"
@@ -356,13 +357,15 @@
                   Whole Grain Brown Rice
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Nutritious unpolished rice rich in fiber and vitamins. Perfect
-                  for healthy meals.
+                  Unpolished rice, locally sourced, rich in fiber and nutrients
+                  for a healthier diet.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">$8.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱270.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.7 (156)</span>
                 </div>
@@ -371,9 +374,9 @@
                     class="text-sm border rounded px-2 py-1"
                     onchange="updatePackSize('brown', this.value)"
                   >
-                    <option value="1">7kg - ₱8.99</option>
-                    <option value="5">5kg - ₱39.99</option>
-                    <option value="10">10kg - ₱74.99</option>
+                    <option value="5">5kg - ₱270.00</option>
+                    <option value="10">10kg - ₱520.00</option>
+                    <option value="25">25kg - ₱1,250.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
@@ -395,7 +398,7 @@
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('brown', 'Whole Grain Brown Rice', 8.99)"
+                    onclick="addToCart('brown', 'Whole Grain Brown Rice', 270.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -404,7 +407,6 @@
               </div>
             </div>
 
-            <!-- Wild Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="premium"
@@ -420,16 +422,18 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Wild Rice Blend
+                  Wild Rice Blend (Imported)
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Premium wild rice blend with nutty flavor and chewy texture.
-                  Rich in antioxidants.
+                  A premium blend with a nutty flavor and chewy texture, great
+                  for gourmet dishes.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">$15.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱850.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.6 (43)</span>
                 </div>
@@ -438,8 +442,8 @@
                     class="text-sm border rounded px-2 py-1"
                     onchange="updatePackSize('wild', this.value)"
                   >
-                    <option value="1">5kg - ₱15.99</option>
-                    <option value="5">5kg - ₱74.99</option>
+                    <option value="5">5kg - ₱850.00</option>
+                    <option value="10">10kg - ₱1,650.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
@@ -459,7 +463,7 @@
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('wild', 'Wild Rice Blend', 15.99)"
+                    onclick="addToCart('wild', 'Wild Rice Blend (Imported)', 850.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -468,7 +472,6 @@
               </div>
             </div>
 
-            <!-- Sushi Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="premium"
@@ -484,16 +487,18 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Premium Sushi Rice
+                  Premium Japanese Sticky Rice
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Short-grain Japanese rice perfect for sushi and onigiri.
-                  Sticky texture when cooked.
+                  Short-grain, high-starch rice ideal for making authentic sushi
+                  and onigiri at home.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">$13.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱700.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.8 (92)</span>
                 </div>
@@ -502,8 +507,8 @@
                     class="text-sm border rounded px-2 py-1"
                     onchange="updatePackSize('sushi', this.value)"
                   >
-                    <option value="1">7kg - ₱13.99</option>
-                    <option value="5">5kg - ₱64.99</option>
+                    <option value="5">5kg - ₱700.00</option>
+                    <option value="10">10kg - ₱1,350.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
@@ -525,7 +530,7 @@
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('sushi', 'Premium Sushi Rice', 13.99)"
+                    onclick="addToCart('sushi', 'Premium Japanese Sticky Rice', 700.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -534,7 +539,6 @@
               </div>
             </div>
 
-            <!-- Red Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="organic"
@@ -550,16 +554,18 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Organic Red Rice
+                  Organic Filipino Red Rice
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Nutrient-rich red rice with earthy flavor. High in
-                  antioxidants and fiber.
+                  Locally grown, nutrient-rich red rice. High in antioxidants
+                  and gives an earthy, nutty flavor.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">₱11.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱295.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.5 (67)</span>
                 </div>
@@ -568,8 +574,8 @@
                     class="text-sm border rounded px-2 py-1"
                     onchange="updatePackSize('red', this.value)"
                   >
-                    <option value="1">8kg - ₱11.99</option>
-                    <option value="5">5kg - ₱54.99</option>
+                    <option value="5">5kg - ₱295.00</option>
+                    <option value="10">10kg - ₱580.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
@@ -589,7 +595,7 @@
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('red', 'Organic Red Rice', 11.99)"
+                    onclick="addToCart('red', 'Organic Filipino Red Rice', 295.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -598,7 +604,6 @@
               </div>
             </div>
 
-            <!-- Bulk Basmati -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="bulk"
@@ -614,16 +619,16 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Bulk Basmati Rice
+                  Commercial White Rice (25kg)
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  25kg bulk pack of premium basmati rice. Perfect for
-                  restaurants and large families.
+                  Cost-effective, good quality white rice. Perfect for
+                  **sari-sari stores** and large households.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
                     <span class="text-xl font-bold text-green-600"
-                      >₱249.99</span
+                      >₱1,150.00</span
                     >
                     <span class="text-sm text-gray-500">/25kg</span>
                   </div>
@@ -631,29 +636,29 @@
                 </div>
                 <div class="flex items-center justify-between mb-3">
                   <span class="text-sm text-green-600 font-medium"
-                    >Save ₱74.76 vs 1kg packs!</span
+                    >Best value for your budget!</span
                   >
                 </div>
                 <div class="flex items-center justify-between">
                   <div class="flex items-center space-x-2">
                     <button
-                      onclick="updateQuantity('bulk-basmati', -1)"
+                      onclick="updateQuantity('bulk-white', -1)"
                       class="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 text-sm"
                     >
                       -
                     </button>
-                    <span id="bulk-basmati-qty" class="w-6 text-center text-sm"
+                    <span id="bulk-white-qty" class="w-6 text-center text-sm"
                       >1</span
                     >
                     <button
-                      onclick="updateQuantity('bulk-basmati', 1)"
+                      onclick="updateQuantity('bulk-white', 1)"
                       class="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 text-sm"
                     >
                       +
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('bulk-basmati', 'Bulk Basmati Rice (25kg)', 249.99)"
+                    onclick="addToCart('bulk-white', 'Commercial White Rice (25kg)', 1150.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
@@ -662,7 +667,6 @@
               </div>
             </div>
 
-            <!-- Black Rice -->
             <div
               class="product-card bg-white rounded-xl shadow-lg overflow-hidden card-hover"
               data-category="premium"
@@ -678,16 +682,18 @@
               </div>
               <div class="p-4">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">
-                  Black Rice (Forbidden Rice)
+                  Heirloom Balatinaw Black Rice
                 </h3>
                 <p class="text-gray-600 text-sm mb-3">
-                  Ancient superfood rice with deep purple color. Highest
-                  antioxidant content of all rice.
+                  Filipino heirloom rice with high antioxidant content, deep
+                  purple color, and a chewy texture.
                 </p>
                 <div class="flex items-center justify-between mb-3">
                   <div>
-                    <span class="text-xl font-bold text-green-600">$18.99</span>
-                    <span class="text-sm text-gray-500">/kg</span>
+                    <span class="text-xl font-bold text-green-600"
+                      >₱450.00</span
+                    >
+                    <span class="text-sm text-gray-500">/5kg</span>
                   </div>
                   <span class="text-sm text-gray-500">⭐ 4.7 (28)</span>
                 </div>
@@ -696,8 +702,8 @@
                     class="text-sm border rounded px-2 py-1"
                     onchange="updatePackSize('black', this.value)"
                   >
-                    <option value="1">1kg - ₱18.99</option>
-                    <option value="5">5kg - ₱59.99</option>
+                    <option value="5">5kg - ₱450.00</option>
+                    <option value="10">10kg - ₱880.00</option>
                   </select>
                 </div>
                 <div class="flex items-center justify-between">
@@ -719,7 +725,7 @@
                     </button>
                   </div>
                   <button
-                    onclick="addToCart('black', 'Black Rice (Forbidden Rice)', 18.99)"
+                    onclick="addToCart('black', 'Heirloom Balatinaw Black Rice', 450.00)"
                     class="bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
                   >
                     Add to Cart
